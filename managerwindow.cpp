@@ -1,3 +1,23 @@
+/*  
+ *  Copyright 2012 Federico Pareschi (Morgawr)
+ * 
+ *  This file is part of the ViewFS-Manager software.
+ *
+ *  ViewFS-Manager is free software: you can redistribute it and/or
+ *  modify it under the terms of the GNU General Public License as 
+ *  published by the Free Software Foundation, either version 3 of 
+ *  the License, or (at your option) any later version.
+ *
+ *  ViewFS-Manager is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
 #include "managerwindow.h"
 #include "ui_managerwindow.h"
 #include "mountdialog.h"
@@ -10,10 +30,13 @@ ManagerWindow::ManagerWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    if(!checkUmProc())
+	/* TODO: Need to somehow hook into the umview/view-os process to determine whether 
+	 * or not it is actually running inside the machine. */
+    if(!checkUmProc()) 
     {
         QMessageBox::about(this,"ViewOS Required!","Error: This program can be used only inside ViewOS with "\
-                 "umproc module loaded. (If you are in a ViewOS machine and you see this, load umproc with \"um_add_service umproc\" and try again).");
+                 "umproc module loaded. (If you are in a ViewOS machine and you see this,"\
+                 " load umproc with \"um_add_service umproc\" and try again).");
         exit(1);
     }
 
@@ -66,14 +89,11 @@ void ManagerWindow::RefreshMounts()
 void ManagerWindow::AddMount()
 {
     mountDialog mnt(this);
-
     mnt.exec();
-
     if(mnt.result()==QDialog::Rejected)
         return;
 
     const char* result = mnt.MountCommand;
-
     system(result); /* TODO: Need to make this part better with error detection. Also I need to stop using system! :( */
 
     RefreshMounts();
@@ -91,7 +111,7 @@ void ManagerWindow::RemoveMount()
     char* command;
     asprintf(&command,"umount %s",viewfs_mounts[selected]->mnt_dir);
 
-    system(command);
+    system(command); /* Same here, I need to stop using System */
 
     free(command);
     RefreshMounts();

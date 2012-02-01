@@ -1,0 +1,16 @@
+To install and run ViewFS-Manager, Qt libraries are required. Check the package
+manager for your Linux distribution of choice and be sure to have them installed
+before compiling it.
+
+This software is a tool for the ViewOS machine ( virtualsquare.org ). It
+cannot be run without it.
+
+
+INSTALLATION STEPS:
+
+Run make in the main directory to compile the program. If no errors were
+found, you can copy the executable (viewfsmanager) into your preferred
+binary directory. (To uninstall it you will have to remove it yourself)
+
+
+Enjoy!

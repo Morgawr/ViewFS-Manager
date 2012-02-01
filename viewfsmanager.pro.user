@@ -58,6 +58,7 @@
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <value key="QtVersionId" type="int">0</value>
    <value key="ToolChain" type="int">0</value>
+   <value key="addQDumper" type=""></value>
    <value key="buildConfiguration" type="int">2</value>
   </valuemap>
  </data>
@@ -66,6 +67,7 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
    <value key="QtVersionId" type="int">0</value>
+   <value key="addQDumper" type=""></value>
    <value key="buildConfiguration" type="int">0</value>
   </valuemap>
  </data>
@@ -74,16 +76,16 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-3O0mId7Ook,guid=887c8fb103e38579411c37d70000003f</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-mThuNDQhZ6,guid=5dbde44e2bedaddd79bd4f2c00000034</value>
     <value type="QString">DESKTOP_SESSION=gnome</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">GDMSESSION=gnome</value>
     <value type="QString">GDM_KEYBOARD_LAYOUT=gb</value>
     <value type="QString">GDM_LANG=en_GB.utf8</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-2x3Iyy</value>
-    <value type="QString">GNOME_KEYRING_PID=3280</value>
-    <value type="QString">GPG_AGENT_INFO=/tmp/seahorse-56Soyh/S.gpg-agent:3348:1</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-QRWaRk</value>
+    <value type="QString">GNOME_KEYRING_PID=3261</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/seahorse-L0SRAC/S.gpg-agent:3329:1</value>
     <value type="QString">GTK_MODULES=canberra-gtk-module</value>
     <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/morgawr/.gtkrc-1.2-gnome2</value>
     <value type="QString">HOME=/home/morgawr</value>
@@ -94,16 +96,16 @@
     <value type="QString">PATH=/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games</value>
     <value type="QString">PWD=/home/morgawr</value>
     <value type="QString">QTDIR=/usr/share/qt4</value>
-    <value type="QString">SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/3299,unix/debian:/tmp/.ICE-unix/3299</value>
+    <value type="QString">SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/3280,unix/debian:/tmp/.ICE-unix/3280</value>
     <value type="QString">SHELL=/bin/bash</value>
-    <value type="QString">SSH_AGENT_PID=3277</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-2x3Iyy/ssh</value>
+    <value type="QString">SSH_AGENT_PID=3258</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-QRWaRk/ssh</value>
     <value type="QString">USER=morgawr</value>
     <value type="QString">USERNAME=morgawr</value>
     <value type="QString">WINDOWPATH=7</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm3/auth-for-morgawr-EQmXCU/database</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm3/auth-for-morgawr-wXVzAf/database</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/share/gdm/:/usr/local/share/:/usr/share/</value>
-    <value type="QString">XDG_SESSION_COOKIE=503d0bc497adb77cfd0c930c00000006-1327828954.549061-8960977</value>
+    <value type="QString">XDG_SESSION_COOKIE=503d0bc497adb77cfd0c930c00000006-1327939711.282836-1416124242</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
     <value type="QString">/media/94eb2e39-d6c7-4174-9e5a-4c492a38290f/Qt/ViewfsManager/viewfsmanager/viewfsmanager.pro</value>
@@ -122,16 +124,16 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-3O0mId7Ook,guid=887c8fb103e38579411c37d70000003f</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-mThuNDQhZ6,guid=5dbde44e2bedaddd79bd4f2c00000034</value>
     <value type="QString">DESKTOP_SESSION=gnome</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">GDMSESSION=gnome</value>
     <value type="QString">GDM_KEYBOARD_LAYOUT=gb</value>
     <value type="QString">GDM_LANG=en_GB.utf8</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-2x3Iyy</value>
-    <value type="QString">GNOME_KEYRING_PID=3280</value>
-    <value type="QString">GPG_AGENT_INFO=/tmp/seahorse-56Soyh/S.gpg-agent:3348:1</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-QRWaRk</value>
+    <value type="QString">GNOME_KEYRING_PID=3261</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/seahorse-L0SRAC/S.gpg-agent:3329:1</value>
     <value type="QString">GTK_MODULES=canberra-gtk-module</value>
     <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/morgawr/.gtkrc-1.2-gnome2</value>
     <value type="QString">HOME=/home/morgawr</value>
@@ -142,16 +144,16 @@
     <value type="QString">PATH=/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games</value>
     <value type="QString">PWD=/home/morgawr</value>
     <value type="QString">QTDIR=/usr/share/qt4</value>
-    <value type="QString">SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/3299,unix/debian:/tmp/.ICE-unix/3299</value>
+    <value type="QString">SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/3280,unix/debian:/tmp/.ICE-unix/3280</value>
     <value type="QString">SHELL=/bin/bash</value>
-    <value type="QString">SSH_AGENT_PID=3277</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-2x3Iyy/ssh</value>
+    <value type="QString">SSH_AGENT_PID=3258</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-QRWaRk/ssh</value>
     <value type="QString">USER=morgawr</value>
     <value type="QString">USERNAME=morgawr</value>
     <value type="QString">WINDOWPATH=7</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm3/auth-for-morgawr-EQmXCU/database</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm3/auth-for-morgawr-wXVzAf/database</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/share/gdm/:/usr/local/share/:/usr/share/</value>
-    <value type="QString">XDG_SESSION_COOKIE=503d0bc497adb77cfd0c930c00000006-1327828954.549061-8960977</value>
+    <value type="QString">XDG_SESSION_COOKIE=503d0bc497adb77cfd0c930c00000006-1327939711.282836-1416124242</value>
    </valuelist>
    <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
@@ -166,6 +168,46 @@
   <variable>buildconfiguration-Debug-cleanstep0</variable>
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-mThuNDQhZ6,guid=5dbde44e2bedaddd79bd4f2c00000034</value>
+    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDM_KEYBOARD_LAYOUT=gb</value>
+    <value type="QString">GDM_LANG=en_GB.utf8</value>
+    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-QRWaRk</value>
+    <value type="QString">GNOME_KEYRING_PID=3261</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/seahorse-L0SRAC/S.gpg-agent:3329:1</value>
+    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/morgawr/.gtkrc-1.2-gnome2</value>
+    <value type="QString">HOME=/home/morgawr</value>
+    <value type="QString">LANG=en_GB.utf8</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator</value>
+    <value type="QString">LOGNAME=morgawr</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-morgawr</value>
+    <value type="QString">PATH=/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games</value>
+    <value type="QString">PWD=/home/morgawr</value>
+    <value type="QString">QTDIR=/usr/share/qt4</value>
+    <value type="QString">SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/3280,unix/debian:/tmp/.ICE-unix/3280</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SSH_AGENT_PID=3258</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-QRWaRk/ssh</value>
+    <value type="QString">USER=morgawr</value>
+    <value type="QString">USERNAME=morgawr</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm3/auth-for-morgawr-wXVzAf/database</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/share/gdm/:/usr/local/share/:/usr/share/</value>
+    <value type="QString">XDG_SESSION_COOKIE=503d0bc497adb77cfd0c930c00000006-1327939711.282836-1416124242</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">true</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">clean</value>
+    <value type="QString">-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/media/94eb2e39-d6c7-4174-9e5a-4c492a38290f/Qt/ViewfsManager/viewfsmanager</value>
    <value key="cleanConfig" type="bool">true</value>
    <valuelist key="makeargs" type="QVariantList">
     <value type="QString">clean</value>

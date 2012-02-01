@@ -1,3 +1,23 @@
+/*  
+ *  Copyright 2012 Federico Pareschi (Morgawr)
+ * 
+ *  This file is part of the ViewFS-Manager software.
+ *
+ *  ViewFS-Manager is free software: you can redistribute it and/or
+ *  modify it under the terms of the GNU General Public License as 
+ *  published by the Free Software Foundation, either version 3 of 
+ *  the License, or (at your option) any later version.
+ *
+ *  ViewFS-Manager is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
 #include "mountdialog.h"
 #include "ui_mountdialog.h"
 #include <stdio.h>
@@ -10,10 +30,10 @@ mountDialog::mountDialog(QWidget *parent) :
     ui(new Ui::mountDialog)
 {
     ui->setupUi(this);
-    ui->typeBox->addItem("move"); //0
-    ui->typeBox->addItem("cow"); //1
-    ui->typeBox->addItem("mincow"); //2
-    ui->typeBox->addItem("merge"); //3
+    ui->typeBox->addItem("move"); 
+    ui->typeBox->addItem("cow"); 
+    ui->typeBox->addItem("mincow");
+    ui->typeBox->addItem("merge"); 
 }
 
 mountDialog::~mountDialog()
@@ -70,7 +90,7 @@ void mountDialog::ExcpBrowseClicked()
 
 void mountDialog::Accepted()
 {
-    //Fill data before accept
+    /* Fill data before accept */
     this->MountCommand = this->fillDataCommand();
     if(this->MountCommand == NULL) /* something went wrong! */
     {
@@ -79,7 +99,6 @@ void mountDialog::Accepted()
         return;
     }
 
-    printf("%s\n",this->MountCommand);
     this->accept();
 }
 
@@ -101,7 +120,10 @@ char* mountDialog::fillDataCommand()
 
     char* mount_opt;
 
-    switch((Ui::mountType)ui->typeBox->view()->currentIndex().row())
+
+	/* TODO: Probably there's a better way in Qt to get the name of the value.
+	 * I was too lazy/in a hurry to optimize this part */
+    switch((Ui::mountType)ui->typeBox->view()->currentIndex().row()) 
     {
     case Ui::move:
         asprintf(&mount_opt,"%s","move");

@@ -1,0 +1,18 @@
+This software is a tool to help the users manage their ViewFS partitions 
+inside the ViewOS machine. It is not strictly tied to the Virtualsquare
+lab (virtualsquare.org) and is an additional external tool. It is not
+required to run the base ViewOS machine or ViewFS modules. 
+
+It is a GUI frontend that allows the users the freedom of choosing
+which directories to mount (or unmount) through ViewFS (Virtual File System
+for ViewOS machines) with several flag of choice. 
+
+This software is released under a GPL license, everyone is free to 
+make modifications and branching of this software given they conform to 
+the GPL licensing standards (see http://www.gnu.org/licenses/).
+
+Feel free to contact the author of this software at morgawr@gmail.com 
+or visit the github repository.
+
+Thanks for using this software.
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManagerWindow</class>
+ <widget class="QMainWindow" name="ManagerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>522</width>
+    <height>376</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>522</width>
+    <height>376</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>522</width>
+    <height>376</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ViewFS Mount Manager</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="mountButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mount</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../home/morgawr/work/Qt/ViewfsManager/viewfsmanager/icons/mount.png</normaloff>../../../../../home/morgawr/work/Qt/ViewfsManager/viewfsmanager/icons/mount.png</iconset>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="unmountButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Unmount</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../home/morgawr/work/Qt/ViewfsManager/viewfsmanager/icons/unmount.png</normaloff>../../../../../home/morgawr/work/Qt/ViewfsManager/viewfsmanager/icons/unmount.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshButton">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>10</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../home/morgawr/work/Qt/ViewfsManager/viewfsmanager/icons/refresh.png</normaloff>../../../../../home/morgawr/work/Qt/ViewfsManager/viewfsmanager/icons/refresh.png</iconset>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="mountList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>501</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>mountButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagerWindow</receiver>
+   <slot>AddMount()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>47</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>unmountButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagerWindow</receiver>
+   <slot>RemoveMount()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>refreshButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagerWindow</receiver>
+   <slot>RefreshMounts()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>498</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>10</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>AddMount()</slot>
+  <slot>RemoveMount()</slot>
+  <slot>RefreshMounts()</slot>
+ </slots>
+</ui>
